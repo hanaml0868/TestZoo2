@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00BCD4"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imvZoo"
+        android:layout_width="@android:dimen/thumbnail_height"
+        android:layout_height="@android:dimen/notification_large_icon_width"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.045"
+        app:srcCompat="@drawable/zoo" />
+
+    <ImageButton
+        android:id="@+id/imbG"
+        android:layout_width="@dimen/Im"
+        android:layout_height="@dimen/Ime"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="20dp"
+        android:background="#00FFFFFF"
+        android:foreground="@drawable/go"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imbE" />
+
+    <ImageButton
+        android:id="@+id/imbC"
+        android:layout_width="@dimen/Im"
+        android:layout_height="@dimen/Ime"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#00FFFFFF"
+        android:foreground="@drawable/call"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.552"
+        app:layout_constraintStart_toEndOf="@+id/imbG"
+        app:layout_constraintTop_toBottomOf="@+id/imbE" />
+
+    <ImageButton
+        android:id="@+id/imbH"
+        android:layout_width="@dimen/Im"
+        android:layout_height="@dimen/Ime"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#00FFFFFF"
+        android:foreground="@drawable/horse"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imvZoo"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/imbE"
+        android:layout_width="@dimen/Im"
+        android:layout_height="@dimen/Ime"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginBottom="8dp"
+        android:background="#00FFFFFF"
+        android:foreground="@drawable/elephant"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imbH"
+        app:layout_constraintTop_toBottomOf="@+id/imvZoo"
+        app:layout_constraintVertical_bias="0.043" />
+
+    <ImageButton
+        android:id="@+id/imbL"
+        android:layout_width="@dimen/Im"
+        android:layout_height="@dimen/Ime"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#00FFFFFF"
+        android:foreground="@drawable/lion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toEndOf="@+id/imbE"
+        app:layout_constraintTop_toBottomOf="@+id/imvZoo" />
+
+</android.support.constraint.ConstraintLayout>
